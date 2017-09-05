@@ -1,0 +1,89 @@
+// font stacks
+helvetica-neue = "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif
+helvetica = "Helvetica Neue", Helvetica, Arial, sans-serif
+georgia = Georgia, Cambria, "Times New Roman", Times, serif
+lucidia-grande = "Lucida Grande", Tahoma, Verdana, Arial, sans-serif
+monospace = unquote("'Bitstream Vera Sans Mono', Consolas, Courier, monospace")
+verdana = Verdana, Geneva, sans-serif
+raleway = "Raleway", sans-serif
+freight-sans = "freight-sans-pro", helvetica-neue
+sofia = "sofia-pro",sans-serif;
+
+// default font settings
+font-stack = sofia
+font-size = 16
+font-color = #000
+font-light-color = #4D4D4D // rgba(0,0,0,0.7) on white
+blue-color = #0E8EB5
+accent = #EFC231
+grey = #ccc
+dark-grey = #2E2E2E
+mid-grey = #A3A6AC
+home-grey = #ededed
+footer-grey = #4d4d4d
+
+// Color Settings
+
+// Home
+hero_img = url('../img/home/hero.jpg')
+hero_img2 = url('../img/home/hero.jpg')
+recent_img = #ebebeb url("../img/home/ccs-bg.jpg") repeat scroll center center
+heading_main = 3em
+heading_sub = 1.7rem
+
+// About & Home Section settings
+about_bg = #f4f1ef
+about_color = #EFC231
+about_font = 20px
+about_heading = 3.3em
+gold-color = #EFC231
+gold-color-light = #EFC231 
+
+// Recent Section settings
+recent_img = #ebebeb url("../img/home/ccs-bg.jpg") repeat scroll center center
+recent_heading = 3em
+recent_btn = #a3a6ac
+
+// Button
+    
+  .button
+    width 100%
+    float left
+    margin 30px 0
+    text-align center
+    a
+      border 1px solid recent_btn
+      color dark-grey
+      display inline-block
+      float none
+      font-size 1rem
+      letter-spacing 0px
+      padding 0.8em 2.5em
+      text-decoration none
+      text-transform uppercase
+      overflow hidden
+      position relative
+      -webkit-transition all 0.3s ease-in-out
+      -ms-transition all 0.3s ease-in-out
+      transition all 0.3s ease-in-out
+      &:hover
+        background dark-grey
+        color #fff
+    a:after
+      background recent_btn none repeat 
+      content ""
+      display block
+      height 100%
+      left 0
+      position absolute
+      top 100%
+      width 100%
+      z-index -1
+      -webkit-transition all 0.3s ease-in-out
+      -ms-transition all 0.3s ease-in-out
+      transition all 0.3s ease-in-out
+    a:hover:after
+        top 0px
+
+header-height = 50px
+header-height2 = 100px 

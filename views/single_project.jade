@@ -1,0 +1,24 @@
+extends layout
+
+block head
+  - relative_path = '../../../'
+  title= post.title + ' | Projects'
+
+block css
+  link(href=relative_path+'css/item_single.css', rel='stylesheet')
+
+
+block content
+  article.page.item-single-page
+    header.project-title.wow.fadeInUp
+      h5= post.tagline
+      h1= post.title
+      if post.link
+        cite: a(href=post.link) website
+        div.owl-carousel1
+            div.item11.wow.fadeInUp
+              img(src='assets/'+post.image)
+    block projects-content
+
+block js
+  block projects-js  

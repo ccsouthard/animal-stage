@@ -1,0 +1,13 @@
+extends layout
+
+block head
+  title Services | CCS Design House
+
+block css
+  link(href='css/services.css', rel='stylesheet')
+
+block content
+  section.page.services-pag
+    .about.page-inner
+          
+        != site.content.services['services'][0].content

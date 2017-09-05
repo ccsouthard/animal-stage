@@ -1,0 +1,47 @@
+extends layout
+
+block head
+  title CCS Design House
+
+block css
+  link(href='css/home.css', rel='stylesheet')
+  link(href='css/slider.css', rel='stylesheet')
+  link(href='css/animate.css', rel='stylesheet')
+  
+mixin display-news(exhibit, date)
+  article.exhibit-item
+    .content
+      header
+        span.date
+          = monthNames[date.getMonth()] + ' '
+          = date.getDate() + ', '
+          = date.getFullYear()
+        h4.title
+          a(href='.'+exhibit._url)
+            = exhibit.title
+
+block content 
+  
+  include _header
+
+  section.page.home-page.wow.zoomIn
+    .hero
+      .hero-content
+        h1 Geometric Geography
+
+      .arrow
+        a(href='#'): i.fa.fa-long-arrow-down
+
+  section.home-page2
+    
+    include _about
+
+    include _projects
+
+  include _recent
+
+  include _testimonial
+
+block js
+  script(src='js/home.js')
+  script(src='js/slider.js')  

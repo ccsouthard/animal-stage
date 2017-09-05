@@ -1,0 +1,23 @@
+extends layout
+
+block head
+  title About | CCS Design 
+
+block css
+  link(href='css/about.css', rel='stylesheet')
+
+block content
+  section.page.about-page
+
+    .about
+
+      .hero-boxes: .hero-container
+
+        .hero-box.left.artist-statement
+          != site.content.about['statement'][0].content
+            
+
+      != site.content.about['process'][0].content
+     
+
+block js   

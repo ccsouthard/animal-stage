@@ -1,0 +1,56 @@
+@import '_settings'
+@import '_animations'
+@import 'jeet'
+
+.item-single-page
+  //center(980px)
+  padding: 45px
+  +between(546px, 860px)
+    padding: 30px
+  +below(545px)
+    padding: 20px
+  
+  a:hover
+    text-decoration: underline
+  
+  header
+    width 100%
+    float left
+    margin-top 20px
+    h5
+      line-light 0px
+      color gold-color-light
+      font-size 16px
+      margin-bottom 10px
+    h1
+      width 100%
+      font-size heading_main
+      line-height 45px
+      text-align left
+      margin-top 0px
+      margin-bottom 15px
+    cite a
+      color  blue-color
+    .owl-carousel1
+      width 100%
+      float left
+      margin 15px 0
+    .back-arrow
+      float: left
+      color: font-light-color
+      font-size: 1.25em
+      margin-top: 8px
+      margin-right: 20px
+      &:hover
+        color: font-color
+
+  p
+    font-size: 1em
+    margin: 15px 0
+    color: #000
+    letter-spacing: 1px
+
+  img
+    max-width: 100%
+    display: block
+    margin: 20px auto
